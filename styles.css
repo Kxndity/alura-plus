@@ -4,6 +4,7 @@
   --botao-azul: #167bf7;
   --cor-de-fundo: #00030c;
   --font-principa: "Inter";
+  --botao-azul-efeito: #78b2f8;
 }
 
 body {
@@ -138,4 +139,28 @@ body {
 .rodape {
   text-align: center;
   margin: 5em 3em;
+}
+
+.rodape__logo {
+  margin-bottom: 2em;
+}
+
+.lista__link a:hover {
+  color: var(--botao-azul);
+  transition: 1s;
+}
+
+.lista__link a:active {
+  color: darkviolet;
+}
+
+.container__botao:hover {
+  background-color: var(--botao-azul-efeito);
+  color: var(--cor-de-fundo);
+}
+@media screen (max-width: 1200px) {
+  .container__principal {
+    width: 100%;
+    flex-direction: column;
+  }
 }
