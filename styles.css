@@ -24,6 +24,7 @@ body {
   background-image: url("img/Background.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: right;
   align-items: center;
   text-align: center;
 }
@@ -158,9 +159,19 @@ body {
   background-color: var(--botao-azul-efeito);
   color: var(--cor-de-fundo);
 }
-@media screen (max-width: 1200px) {
-  .container__principal {
-    width: 100%;
-    flex-direction: column;
+
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 50%;
+  }
+
+  .principal {
+    background-image: url("img/croped-background.png");
+    background-position: center top;
+  }
+
+  .dispositivos__lista img {
+    width: 250px;
   }
 }
