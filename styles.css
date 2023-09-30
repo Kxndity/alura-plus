@@ -174,4 +174,8 @@ body {
   .dispositivos__lista img {
     width: 250px;
   }
+
+  .principal::before {
+    content: "";
+  }
 }
